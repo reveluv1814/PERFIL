@@ -1,0 +1,252 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type"
+content="text/html; charset=iso-8859-1">
+<meta name="GENERATOR" content="Microsoft FrontPage 6.0">
+<link rel="stylesheet" type="text/css" href="../stylesheet/global.css">
+<title>The Test Discipline</title>
+</head>
+
+<body bgcolor="#FFFFFF">
+
+<table border="0" cellpadding="0" cellspacing="0" id="table1" width="100%" bgcolor="#FFFFCC">
+    <tr>
+        <td width="8%"><a href="../index.html">
+		<img border="0" src="../images/logoAgileUP.gif" align="left"></a></td>
+        <td><h1 align="center"><font color="#008000">The Test Discipline</font></h1>
+        </td>
+        <td width="8%"><a href="../index.html">
+		<img border="0" src="../images/logoAgileUP.gif" align="right"></a></td>
+    </tr>
+
+    <!-- Menu Bar -->
+    <script language="JavaScript" src="../javascript/tablecell_mouseover.js"></script>
+    <tr>
+    <td width="200%" colspan="3" style="border-style: solid; border-width: 1px">
+   
+    <table class="menu" align="center" cellpadding="2" cellspacing="2" bgcolor="#FFFFCC" width="100%" style="border-width: 0px" id="menuTable" >
+        <tbody>
+            <tr>
+            <td class="cur-nav" onmouseover='mOvr(this,"#00D000");' onmouseout='mOut(this,"#FFFFCC");' style="border-style: none; border-width: medium">
+            <a href="../index.html">Home</a> </td>
+
+            <td class="cur-nav" onmouseover='mOvr(this,"#00D000");' onmouseout='mOut(this,"#FFFFCC");' style="border-style: none; border-width: medium">
+	        <a href="phases.html">Phases</a> </td> 
+
+            <td class="cur-nav" onmouseover='mOvr(this,"#00D000");' onmouseout='mOut(this,"#FFFFCC");' style="border-style: none; border-width: medium">
+	        <a href="disciplines.html">Disciplines</a>  </td>
+
+            <td class="cur-nav" onmouseover='mOvr(this,"#00D000");' onmouseout='mOut(this,"#FFFFCC");' style="border-style: none; border-width: medium">
+	        <a href="milestones.html">Milestones</a> </td> 
+
+            <td class="cur-nav" onmouseover='mOvr(this,"#00D000");' onmouseout='mOut(this,"#FFFFCC");' style="border-style: none; border-width: medium">
+	        <a href="roles.html">Roles</a> </td> 
+
+            <td class="cur-nav" onmouseover='mOvr(this,"#00D000");' onmouseout='mOut(this,"#FFFFCC");' style="border-style: none; border-width: medium">
+	        <a href="deliverables.html">Deliverables</a> </td> 
+
+            <td class="cur-nav" onmouseover='mOvr(this,"#00D000");' onmouseout='mOut(this,"#FFFFCC");' style="border-style: none; border-width: medium">
+	        <a href="guidance.html">Guidance</a>  </td>
+            
+            <td class="cur-nav" onmouseover='mOvr(this,"#00D000");' onmouseout='mOut(this,"#FFFFCC");' style="border-style: none; border-width: medium">
+	        <a href="help.html">Help</a>  </td>
+            
+            </tr>
+     </table>
+	</td>
+    </tr>
+
+   </table>
+
+<p>The goal of this discipline is to perform an objective evaluation to ensure 
+quality. This includes finding defects, validating that the system works as 
+designed, and verifying that the requirements are met.</p>
+
+<ul>
+	<li><a href="#Workflow">Workflow</a></li>
+	<li><a href="#Tips">Tips</a></li>
+	<li><a href="#PhaseByPhase">Phase by phase</a></li>
+	<li><a href="#SuggestedReading">Suggested reading</a></li>
+</ul>
+<p>&nbsp;</p>
+<h3><a name="Workflow">Workflow</a></h3>
+<p align="center"><img border="0" src="../images/workflowTest.gif"></p>
+<p>&nbsp;</p>
+<h3><a name="Tips">Tips</a></h3>
+<ul>
+	<li>Test throughout the lifecycle.&nbsp; <a href="#Figure1">Figure 1</a> 
+	depicts the <a href="http://www.ambysoft.com/essays/floot.html">Full 
+	Lifecycle Object Oriented Testing (FLOOT)</a> lifecycle diagram.</li>
+	<li><a href="http://www.agiledata.org/essays/tdd.html">Test driven development 
+	(TDD)</a> is a <a href="implementation.html">implementation</a> technique 
+	which promotes the development of high-quality software.</li>
+	<li>You need to automate your test suite to truly support evolutionary 
+	development.</li>
+	<li>Agile practices such as <a href="http://pairprogramming.com/">pair programming</a>,
+	<a href="http://www.agilemodeling.com/practices.htm#ModelWithOthers">
+	modeling with others</a>, and
+	<a href="http://www.agilemodeling.com/practices.htm#CollectiveOwnership">
+	collective ownership</a> effectively promote &quot;in progress reviews&quot;, 
+	resulting in <a href="http://www.agilemodeling.com/essays/modelReviews.htm">
+	less need for traditional reviews</a>.</li>
+	<li>If it's worth creating it's worth validating.</li>
+	<li><a href="deliverables.html#AcceptanceTests">Acceptance tests</a> should 
+	do &quot;double duty&quot; as both requirements and testing work products.</li>
+</ul>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p>&nbsp;</p>
+<p><b><a name="Figure1">Figure 1</a>. The FLOOT lifecycle.</b></p>
+<p align="center"><img border="0" src="../images/lifecycleFloot.gif"></p>
+<p align="center">&nbsp;</p>
+<h3><a name="PhaseByPhase">Phase by Phase</a></h3>
+<table border="1" width="100%" id="table3">
+	<tr>
+		<td><b><a href="phases.html">Phase</a></b></td>
+		<td><b><font size="2">Activities</font></b></td>
+	</tr>
+	<tr>
+		<td><a href="inception.html" name="Inception">Inception</a></td>
+		<td><b><font size="2">Initial test planning</font></b><font size="2">.&nbsp; Should be very high-level at first.&nbsp; 
+		The main goal is to identify how much testing you'll need to do, who 
+		will be responsible for it, the level of stakeholder participation 
+		required, and the types of tools and environments required (an
+		</font>
+		<a href="environment.html">Environment</a><font size="2"> discipline issue).</font><p><b>
+		<font size="2">Review initial project management 
+		work products</font></b><font size="2">.&nbsp; 
+		Towards the end of this phase the initial project plan, vision, and so 
+		on should be available.&nbsp; These work products are often reviewed, 
+		typically as part of the </font> <a href="milestones.html#LCO">milestone review</a><font size="2">, 
+		by key project stakeholders.</font></p>
+		<p><b><font size="2">Review initial models</font></b><font size="2">.&nbsp; A high-level,
+		</font>
+		<a href="http://www.agilemodeling.com/essays/amdd.htm#InitialModeling">
+		initial</a><font size="2"> </font> <a href="deliverables.html#RequirementsModel">requirements 
+		model</a><font size="2">, and perhaps even an
+		</font>
+		<a href="http://www.agilemodeling.com/essays/amdd.htm#InitialModeling">
+		initial</a><font size="2"> architecture model, should be produced by your
+		</font>
+		<a href="model.html">modeling</a><font size="2"> efforts.&nbsp; You may choose 
+		to review this work with stakeholders, particularly if you want to 
+		communicate the scope and potential architecture of your system to a 
+		wider range of people than were actively involved in the development of 
+		the models. </font> </td>
+	</tr>
+	<tr>
+		<td><a href="elaboration.html">Elaboration</a></td>
+		<td><b><font size="2">Validate the architecture</font></b><font size="2">.&nbsp; You should take a
+		</font>
+		<a href="http://www.agiledata.org/essays/tdd.html">test-driven 
+		development (TDD)</a><font size="2"> approach to building your technical prototype 
+		which proves the architecture of your system.&nbsp; An important aspect 
+		of the </font> <a href="milestones.html#LCA">milestone review</a><font size="2"> is the 
+		validation of the architecture, which might be something as simple as
+		</font>
+		<a href="http://www.agilemodeling.com/essays/presentations.htm">
+		presenting</a><font size="2"> an overview of the architecture and the results of your 
+		prototyping efforts to your stakeholders.&nbsp; Or, it might be 
+		something as complex as a
+		</font>
+		<a href="http://www.agilemodeling.com/essays/modelReviews.htm">formal 
+		review</a><font size="2"> of all your work during this phase.&nbsp; 
+		</font> 
+		<p><b><font size="2">Evolve your test model</font></b><font size="2">.&nbsp; Your team will develop a
+		</font>
+		<a href="deliverables.html#RegressionTestSuite">regression test suite</a><font size="2">, 
+		comprised of unit tests from your
+		</font>
+		<a href="http://www.agiledata.org/essays/tdd.html">test driven 
+		development (TDD)</a><font size="2"> efforts in </font> <a href="implementation.html">
+		implementation</a><font size="2">, your acceptance tests from your 
+		</font> <a href="model.html">
+		modeling</a><font size="2"> efforts, and your system tests (e.g. for function, 
+		integration, load, ... testing).&nbsp; You may also need to maintain 
+		traceability between your requirements, tests, and source code to show how you 
+		have validated the implemented 
+		requirements.&nbsp; At this point your defect reports would simply be 
+		the output of your test suite. </font> </td>
+	</tr>
+	<tr>
+		<td><a href="construction.html">Construction</a></td>
+		<td><b><font size="2">Test the software</font></b><font size="2">.&nbsp; In addition to unit testing by 
+		developers you need to do installation testing of your
+		</font>
+		<a href="deployment.html">deployment</a><font size="2"> scripts, system testing efforts 
+		such as load/stress testing and function testing, and user acceptance 
+		testing.&nbsp; Because your software evolves throughout your projects so 
+		will your test suite.&nbsp; The more often you promote your code into a 
+		pre-production test environment, and then test it appropriately, the 
+		better your </font> <a href="transition.html">Transition</a><font size="2"> phase testing activities will be.</font><p><b>
+		<font size="2">Evolve 
+		your test model</font></b><font size="2">.&nbsp; See above.</font></td>
+	</tr>
+	<tr>
+		<td><a href="transition.html">Transition</a></td>
+		<td><b><font size="2">Validate the system</font></b><font size="2">.&nbsp; Your focus will be on &quot;</font><a href="http://www.ambysoft.com/essays/floot.html">testing in the large</a><font size="2">&quot; 
+		activities such as system testing, integration testing, acceptance 
+		testing, and pilot/beta testing.&nbsp; Your goal is to fully test the 
+		system within your pre-production testing environment(s). </font> <p><b>
+		<font size="2">Validate the 
+		documentation</font></b><font size="2">.&nbsp; Your
+		</font>
+		<a href="deliverables.html#SystemDocumentation">system documentation</a><font size="2"> 
+		(</font><a href="deliverables.html#SystemOverviewDocument">system overview</a><font size="2">,
+		</font>
+		<a href="deliverables.html#UserDocumentation">user</a><font size="2">,
+		</font>
+		<a href="deliverables.html#SupportDocumentation">support</a><font size="2">,
+		and
+		</font>
+		<a href="deliverables.html#OperationsDocumentation">operations 
+		documentation</a><font size="2">), and your
+		</font>
+		<a href="deliverables.html#TrainingMaterials">training materials</a><font size="2"> will need to be 
+		validated.&nbsp; This can be done in 
+		</font> 
+		<a href="http://www.agilemodeling.com/essays/modelReviews.htm">reviews</a><font size="2"> or better yet as part of 
+		your pilot/beta testing.</font><p><b><font size="2">Finalize your test model</font></b><font size="2">.&nbsp; You 
+		will continue to run your regression test suite, and update it as 
+		needed, until your system is ready to be </font> <a href="deployment.html">deployed</a><font size="2"> into production.&nbsp; 
+		Your </font> <a href="deliverables.html#DefectReport">defect reporting</a><font size="2"> will 
+		likely become more formal, the found defects will likely be recorded, 
+		along with appropriate details, so that developers can implement fixes.</font></td>
+	</tr>
+	</table>
+<p>&nbsp;</p>
+<h3><a name="SuggestedReading">Suggested Reading</a></h3>
+<ul>
+	<li>
+	<a href="http://www.testing.com/agile/">Brian Marick's Agile Testing Page</a></li>
+	<li>
+	<a href="http://fitnesse.org/">FITNesse.org</a></li>
+	<li>
+	<a href="http://www.ambysoft.com/essays/floot.html">The Full Lifecycle 
+	Object-Oriented Testing (FLOOT) method</a></li>
+	<li>
+	<a href="http://sourceforge.net/projects/xunit/">XUnit Home Page</a></li>
+</ul>
+<p><br>
+</p>
+
+<hr>
+<table border="0" id="table2" width="100%" bgcolor="#FFFFCC">
+	<tr>
+		<td width="104">
+		<a href="http://www.ambysoft.com/scottAmbler.html">
+		<img border="0" src="../images/logoYours.gif" align="left"></a></td>
+		<td><b>Page last updated: May 13, 2006</b><p>
+<b>This page is tailored with permission from <a href="http://www.ambysoft.com/">
+Ambysoft Inc.'s</a>
+<a href="http://www.ambysoft.com/unifiedprocess/agileUP.html">Agile UP Product</a></b></p>
+		<p>
+<b>Original page is Copyright © 2005-2006 <a href="http://www.ambysoft.com">Ambysoft Inc.</a></b><a href="http://www.ambysoft.com">
+</a> </p></td>
+	</tr>
+</table>
+</body>
+</html>

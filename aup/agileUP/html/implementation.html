@@ -1,0 +1,231 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type"
+content="text/html; charset=iso-8859-1">
+<meta name="GENERATOR" content="Microsoft FrontPage 6.0">
+<link rel="stylesheet" type="text/css" href="../stylesheet/global.css">
+<title>The Implementation Discipline</title>
+</head>
+
+<body bgcolor="#FFFFFF">
+
+<table border="0" cellpadding="0" cellspacing="0" id="table1" width="100%" bgcolor="#FFFFCC">
+    <tr>
+        <td width="8%"><a href="../index.html">
+		<img border="0" src="../images/logoAgileUP.gif" align="left"></a></td>
+        <td><h1 align="center"><font color="#008000">The Implementation 
+		Discipline</font></h1>
+        </td>
+        <td width="8%"><a href="../index.html">
+		<img border="0" src="../images/logoAgileUP.gif" align="right"></a></td>
+    </tr>
+
+    <!-- Menu Bar -->
+    <script language="JavaScript" src="../javascript/tablecell_mouseover.js"></script>
+    <tr>
+    <td width="200%" colspan="3" style="border-style: solid; border-width: 1px">
+   
+    <table class="menu" align="center" cellpadding="2" cellspacing="2" bgcolor="#FFFFCC" width="100%" style="border-width: 0px" id="menuTable" >
+        <tbody>
+            <tr>
+            <td class="cur-nav" onmouseover='mOvr(this,"#00D000");' onmouseout='mOut(this,"#FFFFCC");' style="border-style: none; border-width: medium">
+            <a href="../index.html">Home</a> </td>
+
+            <td class="cur-nav" onmouseover='mOvr(this,"#00D000");' onmouseout='mOut(this,"#FFFFCC");' style="border-style: none; border-width: medium">
+	        <a href="phases.html">Phases</a> </td> 
+
+            <td class="cur-nav" onmouseover='mOvr(this,"#00D000");' onmouseout='mOut(this,"#FFFFCC");' style="border-style: none; border-width: medium">
+	        <a href="disciplines.html">Disciplines</a>  </td>
+
+            <td class="cur-nav" onmouseover='mOvr(this,"#00D000");' onmouseout='mOut(this,"#FFFFCC");' style="border-style: none; border-width: medium">
+	        <a href="milestones.html">Milestones</a> </td> 
+
+            <td class="cur-nav" onmouseover='mOvr(this,"#00D000");' onmouseout='mOut(this,"#FFFFCC");' style="border-style: none; border-width: medium">
+	        <a href="roles.html">Roles</a> </td> 
+
+            <td class="cur-nav" onmouseover='mOvr(this,"#00D000");' onmouseout='mOut(this,"#FFFFCC");' style="border-style: none; border-width: medium">
+	        <a href="deliverables.html">Deliverables</a> </td> 
+
+            <td class="cur-nav" onmouseover='mOvr(this,"#00D000");' onmouseout='mOut(this,"#FFFFCC");' style="border-style: none; border-width: medium">
+	        <a href="guidance.html">Guidance</a>  </td>
+            
+            <td class="cur-nav" onmouseover='mOvr(this,"#00D000");' onmouseout='mOut(this,"#FFFFCC");' style="border-style: none; border-width: medium">
+	        <a href="help.html">Help</a>  </td>
+            
+            </tr>
+     </table>
+	</td>
+    </tr>
+
+    </table>
+
+<p>The goal of this discipline is to transform your model(s) into executable code 
+and to perform a basic level of testing, in particular unit testing.</p>
+
+<ul>
+	<li><a href="#Workflow">Workflow</a></li>
+	<li><a href="#Tips">Tips</a></li>
+	<li><a href="#PhaseByPhase">Phase by phase</a></li>
+	<li><a href="#SuggestedReading">Suggested reading</a></li>
+</ul>
+<p>&nbsp;</p>
+<h3><a name="Workflow">Workflow</a></h3>
+<p align="center">
+<img border="0" src="../images/workflowImplementation.gif"></p>
+<h3><a name="Tips">Tips</a></h3>
+<ul>
+	<li><a href="http://pairprogramming.com/">Pair programming</a>, where two 
+	developers work together at one workstation, can improve the quality of 
+	their work, their learning experience, and their productivity.</li>
+	<li><a href="http://www.agiledata.org/essays/tdd.html">Test driven development 
+	(TDD)</a>, where you write a test and then just enough production code to 
+	satisfy that test, works incredibly well.</li>
+	<li>A sketch can be worth a thousand lines of code.&nbsp; By
+	<a href="model.html">modeling</a> before you code, even if it's simply a
+	<a href="http://www.agilemodeling.com/essays/whiteboardModeling.htm">plain 
+	old whiteboard (POW) sketch</a>, can prevent significant amounts of rework 
+	later on. </li>
+	<li>Adopt and follow a common set of
+	<a href="http://www.ambysoft.com/essays/codingGuidelines.html">coding guidelines</a>.&nbsp; </li>
+	<li><a href="http://www.refactoring.com/">Refactor your code</a> and
+	<a href="http://www.agiledata.org/essays/databaseRefactoring.html">database 
+	schemas</a> as you work to keep them of high quality.</li>
+	<li>Have separate <a href="http://www.agiledata.org/essays/sandboxes.html">
+	development sandboxes</a>.</li>
+</ul>
+<p>&nbsp;</p>
+<h3><a name="PhaseByPhase">Phase by Phase</a></h3>
+<table border="1" width="100%" id="table3">
+	<tr>
+		<td><b><a href="phases.html">Phase</a></b></td>
+		<td><b><font size="2">Activities</font></b></td>
+	</tr>
+	<tr>
+		<td><a href="inception.html" name="Inception">Inception</a></td>
+		<td><b><font size="2">Technical prototyping</font></b><font size="2">.&nbsp; You might need to &quot;spike&quot; a small aspect of a requirement in order to understand 
+		it sufficiently, enabling you to </font> <a href="projectManagement.html">estimate</a><font size="2"> the effort required.&nbsp; 
+		These prototypes are typically small, &quot;throw away&quot; pieces of code.</font><p>
+		<a href="http://www.ambysoft.com/essays/userInterfacePrototyping.html">User 
+		interface prototyping</a><font size="2">.&nbsp; For most
+		</font>
+		<a href="http://www.agilemodeling.com/essays/activeStakeholderParticipation.htm#Stakeholders">
+		stakeholders</a><font size="2"> the user interface (UI) -- the screens, reports, and 
+		manuals -- is the system.&nbsp; When the UI is potentially complex, or 
+		when your stakeholders want to see what they're going to get before they 
+		buy it, you will want to consider prototyping at least the main 
+		screens/pages.&nbsp; The UI prototype, usually a throw away at this point, 
+		would be used to convince your stakeholders that you understand their 
+		needs (which you would explore as part of your </font> <a href="model.html">
+		modeling</a><font size="2"> efforts).</font></td>
+	</tr>
+	<tr>
+		<td><a href="elaboration.html">Elaboration</a></td>
+		<td><b><font size="2">Prove the architecture</font></b><font size="2">.&nbsp; The critical activity within 
+		the Elaboration phase is to identify a potential architecture and then 
+		prove that your architecture works via the development of an end-to-end 
+		architectural prototype for your system, thereby mitigating much of the technical risk on your project.&nbsp; Technical prototypes such as this are production 
+		quality code that forms the foundation, or skeleton, of your system.</font></td>
+	</tr>
+	<tr>
+		<td><a href="construction.html">Construction</a></td>
+		<td><b><font size="2">Test first</font></b><font size="2">.&nbsp; Take a
+		</font>
+		<a href="http://www.agiledata.org/essays/tdd.html">TDD</a><font size="2">-based 
+		approach to all aspects of implementation.</font><p><b><font size="2">Build continuously</font></b><font size="2">.&nbsp; 
+		Daily builds are a good start, but ideally you want to build your system 
+		whenever the </font> <a href="deliverables.html#SourceCode">source code</a><font size="2"> changes.&nbsp; Automate this using a product 
+		like </font> <a href="http://cruisecontrol.sourceforge.net/">Cruise Control </a>
+		<font size="2">which monitors your version control system for changes to your code and 
+		rebuilds as needed.</font></p>
+		<p><b><font size="2">Evolve the domain logic</font></b><font size="2">.&nbsp; Implement your business logic 
+		in your domain/business classes.</font></p>
+		<p><b><font size="2">Evolve the user interface</font></b><font size="2">.&nbsp; The user interface is the 
+		system to most of your users.&nbsp; Strive to make your software as 
+		usable as possible by following common
+		</font>
+		<a href="http://www.ambysoft.com/essays/userInterfaceDesign.html">
+		usability and user interface design strategies</a><font size="2">.</font></p>
+		<p><b><font size="2">Evolve the data schema</font></b><font size="2">.&nbsp; Your data schema should be 
+		evolved in step with your domain and user interface code.&nbsp; You will 
+		need to
+		</font>
+		<a href="http://www.agiledata.org/essays/databaseRefactoring.html">
+		refactor your database</a><font size="2"> just like you refactor your other types of 
+		code.</font></p>
+		<p><b><font size="2">Develop interfaces to legacy assets</font></b><font size="2">.&nbsp; You will often need 
+		to access existing functionality within legacy systems.&nbsp; This may 
+		be done via a variety of means, including a web services interface, a 
+		C-API, stored procedures, and so on.&nbsp;
+			</font>
+			<a href="http://www.agilemodeling.com/essays/agileLegacyIntegrationModeling.htm">
+			Legacy analysis</a><font size="2"> is often an important part of your
+		</font>
+		<a href="model.html">modeling efforts</a><font size="2">.</font><p><b>
+		<font size="2">Write data conversion scripts</font></b><font size="2">.&nbsp; 
+		You will often need to access legacy data sources.&nbsp; These data 
+		sources often suffer from
+		</font>
+		<a href="http://www.agiledata.org/essays/legacyDatabases.html">design 
+		and/or quality problems</a><font size="2"> and as a result you will need to write data 
+		conversion scripts to put the data feed(s) into a useable format.&nbsp;
+		</font> </td>
+	</tr>
+	<tr>
+		<td><a href="transition.html">Transition</a></td>
+		<td><b><font size="2">Fix defects</font></b><font size="2">.&nbsp; Your focus shifts to fixing the defects 
+		found as a result of </font> <a href="test.html">testing</a><font size="2">.</font></td>
+	</tr>
+	</table>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<h3><a name="SuggestedReading">Suggested Reading</a></h3>
+<ul>
+	<li>
+	<a href="http://www.agiledata.org/essays/bestPractices.html">Agile Database 
+	Best Practices</a></li>
+	<li>
+	<a href="http://www.ambysoft.com/essays/codingGuidelines.html">Coding 
+	Guidelines</a></li>
+	<li>
+	<a href="http://www.agiledata.org/essays/databaseRefactoring.html">Database 
+	Refactoring</a></li>
+	<li>
+	<a href="http://www.literateprogramming.com/">Literate Programming</a></li>
+	<li>
+	<a href="http://www.refactoring.com/">Refactoring</a></li>
+	<li>
+	<a href="http://www.agiledata.org/essays/tdd.html">Test Driven Development 
+	(TDD)</a></li>
+				<li>
+	<a href="http://www.ambysoft.com/essays/userInterfaceDesign.html">User 
+              Interface Design Tips, Techniques, and Principles</a> &nbsp;</li>
+<li>
+								<a href="http://www.ambysoft.com/essays/userInterfacePrototyping.html">User Interface Prototyping Tips and Techniques</a></li>
+				
+				
+				
+				
+	<li>
+	<a href="http://sourceforge.net/projects/xunit/">XUnit Home Page</a></li>
+</ul>
+<p><br>
+</p>
+
+<hr>
+<table border="0" id="table2" width="100%" bgcolor="#FFFFCC">
+	<tr>
+		<td width="104">
+		<a href="http://www.ambysoft.com/scottAmbler.html">
+		<img border="0" src="../images/logoYours.gif" align="left"></a></td>
+		<td><b>Page last updated: May 13, 2006</b><p>
+<b>This page is tailored with permission from <a href="http://www.ambysoft.com/">
+Ambysoft Inc.'s</a>
+<a href="http://www.ambysoft.com/unifiedprocess/agileUP.html">Agile UP Product</a></b></p>
+		<p>
+<b>Original page is Copyright © 2005-2006 <a href="http://www.ambysoft.com">Ambysoft Inc.</a></b><a href="http://www.ambysoft.com">
+</a> </p></td>
+	</tr>
+</table>
+</body>
+</html>

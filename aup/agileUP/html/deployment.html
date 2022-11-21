@@ -1,0 +1,269 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type"
+content="text/html; charset=iso-8859-1">
+<meta name="GENERATOR" content="Microsoft FrontPage 6.0">
+<link rel="stylesheet" type="text/css" href="../stylesheet/global.css">
+<title>The Deployment Discipline</title>
+</head>
+
+<body bgcolor="#FFFFFF">
+
+<table border="0" cellpadding="0" cellspacing="0" id="table1" width="100%" bgcolor="#FFFFCC">
+    <tr>
+        <td width="8%"><a href="../index.html">
+		<img border="0" src="../images/logoAgileUP.gif" align="left"></a></td>
+        <td><h1 align="center"><font color="#008000">The Deployment Discipline</font></h1>
+        </td>
+        <td width="8%"><a href="../index.html">
+		<img border="0" src="../images/logoAgileUP.gif" align="right"></a></td>
+    </tr>
+
+    <!-- Menu Bar -->
+    <script language="JavaScript" src="../javascript/tablecell_mouseover.js"></script>
+    <tr>
+    <td width="200%" colspan="3" style="border-style: solid; border-width: 1px">
+   
+    <table class="menu" align="center" cellpadding="2" cellspacing="2" bgcolor="#FFFFCC" width="100%" style="border-width: 0px" id="menuTable" >
+        <tbody>
+            <tr>
+            <td class="cur-nav" onmouseover='mOvr(this,"#00D000");' onmouseout='mOut(this,"#FFFFCC");' style="border-style: none; border-width: medium">
+            <a href="../index.html">Home</a> </td>
+
+            <td class="cur-nav" onmouseover='mOvr(this,"#00D000");' onmouseout='mOut(this,"#FFFFCC");' style="border-style: none; border-width: medium">
+	        <a href="phases.html">Phases</a> </td> 
+
+            <td class="cur-nav" onmouseover='mOvr(this,"#00D000");' onmouseout='mOut(this,"#FFFFCC");' style="border-style: none; border-width: medium">
+	        <a href="disciplines.html">Disciplines</a>  </td>
+
+            <td class="cur-nav" onmouseover='mOvr(this,"#00D000");' onmouseout='mOut(this,"#FFFFCC");' style="border-style: none; border-width: medium">
+	        <a href="milestones.html">Milestones</a> </td> 
+
+            <td class="cur-nav" onmouseover='mOvr(this,"#00D000");' onmouseout='mOut(this,"#FFFFCC");' style="border-style: none; border-width: medium">
+	        <a href="roles.html">Roles</a> </td> 
+
+            <td class="cur-nav" onmouseover='mOvr(this,"#00D000");' onmouseout='mOut(this,"#FFFFCC");' style="border-style: none; border-width: medium">
+	        <a href="deliverables.html">Deliverables</a> </td> 
+
+            <td class="cur-nav" onmouseover='mOvr(this,"#00D000");' onmouseout='mOut(this,"#FFFFCC");' style="border-style: none; border-width: medium">
+	        <a href="guidance.html">Guidance</a>  </td>
+            
+            <td class="cur-nav" onmouseover='mOvr(this,"#00D000");' onmouseout='mOut(this,"#FFFFCC");' style="border-style: none; border-width: medium">
+	        <a href="help.html">Help</a>  </td>
+            
+            </tr>
+     </table>
+	</td>
+    </tr>
+
+    </table>
+
+<p>The goal of this discipline is to plan for the delivery of the system and to 
+execute the plan to make the system available to end users.</p>
+
+<ul>
+	<li><a href="#Workflow">Workflow</a></li>
+	<li><a href="#Tips">Tips</a></li>
+	<li><a href="#PhaseByPhase">Phase by phase</a></li>
+	<li><a href="#SuggestedReading">Suggested reading</a></li>
+</ul>
+<p>&nbsp;</p>
+<h3><a name="Workflow">Workflow</a></h3>
+<p align="center">
+<img border="0" src="../images/workflowDeployment.gif"></p>
+<p>&nbsp;</p>
+<h3><a name="Tips">Tips</a></h3>
+<ul>
+	<li>Work closely with operations and support staff to determine their needs.</li>
+	<li>Develop and evolve your installation scripts during the 
+	<a href="construction.html">Construction</a> 
+	phase.</li>
+	<li>Have a <a href="http://www.agiledata.org/essays/sandboxes.html">
+	pre-production testing sandbox</a> where you can validate that your system 
+	works before you deploy it into production.&nbsp; See <a href="#Figure1">
+	Figure 1</a>.</li>
+	<li>Your organization may have &quot;blackout periods&quot; when you are not allowed 
+	to deploy new software into production.&nbsp; Common blackout periods are 
+	around year end when you need to focus on closing your financial books and 
+	during peak business periods, such as the holiday season for retailers.</li>
+	<li>Have go/no-go decision points in your deployment process.</li>
+	<li>Be able to &quot;de-install&quot; your system if you run into problems.</li>
+	<li>Test your (de)installation scripts</li>
+</ul>
+<p align="left">
+<b><a name="Figure1">Figure 1</a>. Sandboxes.</b></p>
+<p align="center">
+<img border="0" src="../images/sandboxes.gif" width="641" height="483"></p>
+<p align="center">
+&nbsp;</p>
+<h3><a name="PhaseByPhase">Phase by Phase</a></h3>
+<table border="1" width="100%" id="table3">
+	<tr>
+		<td><b><a href="phases.html">Phase</a></b></td>
+		<td><b><font size="2">Activities</font></b></td>
+	</tr>
+	<tr>
+		<td><a href="inception.html" name="Inception">Inception</a></td>
+		<td><b><font size="2">Identify the potential release window</font></b><font size="2">.&nbsp; For 
+		example, you may be required to deliver your software before the end of 
+		the year but after the release of another application that is planned to 
+		go into production at the end of September.&nbsp; Therefore your release 
+		window is between October 1st and December 31st, 
+		but you may decide to be conservative and set it to be between November 
+		1st and December 15th to take into account deployment problems with the 
+		other project and the holidays at the end of December.&nbsp; Defining 
+		your release window early in the project helps you in your project 
+		planning efforts.</font><p>
+		<b><font size="2">Begin high-level </font> <a href="deliverables.html#DeploymentPlan">deployment planning</a></b><font size="2">.&nbsp; This effort will focus on initial 
+		release planning for your system, identifying your deployment audience, 
+		and identifying your potential release window.&nbsp; Your main goal should be to determine a general deployment strategy: 
+		based on your understanding of your project, does it make sense to 
+		release the software all at once or as phased releases?&nbsp; Because 
+		you won't have finalized your architectural strategy yet, you may decide 
+		to begin deployment planning during the </font> <a href="elaboration.html">Elaboration</a><font size="2"> phase instead.&nbsp; 
+		</font> </td>
+	</tr>
+	<tr>
+		<td><a href="elaboration.html">Elaboration</a></td>
+		<td><b><font size="2">Update your </font> <a href="deliverables.html#DeploymentPlan">deployment plan</a></b><font size="2">.&nbsp; An 
+		important part of defining your architecture is defining the deployment 
+		configurations for your system, perhaps you will support a three-tier 
+		client/server configuration for internal users connected to your 
+		network, an HTML-based interface for Internet usage, and a stand-alone 
+		single user version for disconnected users.&nbsp; Each individual deployment 
+		configuration could be documented with some form of
+		</font>
+		<a href="deliverables.html#DeploymentModel">deployment model</a><font size="2"> that 
+		defines how the actual software components are organized and deployed to 
+		hardware components.&nbsp;&nbsp; Understanding the configurations will 
+		help you to identify the different types of installations you'll have to 
+		do, which in turn should provide insight into the overall deployment 
+		effort.</font></td>
+	</tr>
+	<tr>
+		<td><a href="construction.html">Construction</a></td>
+		<td><b><font size="2">Develop (de)installation scripts</font></b><font size="2">.&nbsp; As you develop the 
+		system you should also write, and test, the 
+		</font> 
+		<a href="deliverables.html#InstallationScripts">installation and 
+		de-installation scripts</a><font size="2"> required to deploy it into your pre-production 
+		testing environment.&nbsp; This scripts should be written so that you 
+		can simply reconfigure them to deploy into production.</font><p><b>
+		<font size="2">Develop release notes</font></b><font size="2">.&nbsp; 
+		Your </font> <a href="deliverables.html#ReleaseNotes">release notes</a><font size="2"> should 
+		summarize the &quot;good things to know&quot; about the current release of the 
+		system which you're building.&nbsp; Point 
+		form notes are likely sufficient for now.</font></p>
+		<p><b><font size="2">Develop initial documentation</font></b><font size="2">.&nbsp; In addition to delivering 
+		working software, you will also need to deliver 
+		</font> 
+		<a href="deliverables.html#SystemDocumentation">system documentation</a><font size="2"> 
+		(</font><a href="deliverables.html#OperationsDocumentation">operations</a><font size="2">,
+		</font>
+		<a href="deliverables.html#SupportDocumentation">support</a><font size="2">, 
+		</font> 
+		<a href="deliverables.html#SystemOverviewDocument">system overview</a><font size="2">, and
+		</font>
+		<a href="deliverables.html#UserDocumentation">user documentation</a><font size="2">), 
+		as well as your
+		</font>
+		<a href="deliverables.html#TrainingMaterials">training materials</a><font size="2">.&nbsp; 
+		If you're creating new documents then you can at least begin to define 
+		their structure and add point form notes to them.&nbsp; You do not want 
+		to put much work into the documents now because your system is still 
+		evolving.</font></p>
+		<p><b><font size="2">Update your </font> <a href="deliverables.html#DeploymentPlan">plan</a></b><font size="2">.&nbsp; As development of the system 
+		progresses, so should your deployment plan. You 
+		will likely find that you need to negotiate your deployment plan with 
+		your operations and support departments, as well as with other projects 
+		that are also planning on deploying software, so that your project fits 
+		into your overall corporate system deployment plan.&nbsp; </font> </p>
+		<p><b><font size="2">Deploy the system into pre-production environments</font></b><font size="2">.&nbsp; You 
+		should regularly deploy your system into pre-production environments for 
+		QA/testing as well as for demonstrations to your stakeholders.&nbsp; The 
+		more experience you get doing this the easier your actual deployment 
+		into production is likely to be.</font></td>
+	</tr>
+	<tr>
+		<td><a href="transition.html">Transition</a></td>
+		<td><b><font size="2">Finalize the deployment package</font></b><font size="2">. To finalize the packaging of your 
+		software you need to define its deployment baseline, a 
+		</font> 
+		<a href="configurationManagement.html">configuration 
+		management</a><font size="2"> activity, and you need to perform a &quot;final&quot; build the 
+		software, an Implementation workflow task.&nbsp;&nbsp; 
+		</font> 
+		<p><b><font size="2">Finalize documentation</font></b><font size="2">.&nbsp; The majority of the 
+		</font> 
+		<a href="deliverables.html#SystemDocumentation">system documentation</a><font size="2"> 
+		(</font><a href="deliverables.html#OperationsDocumentation">operations</a><font size="2">,
+		</font>
+		<a href="deliverables.html#SupportDocumentation">support</a><font size="2">, 
+		</font> 
+		<a href="deliverables.html#SystemOverviewDocument">system overview</a><font size="2">, and
+		</font>
+		<a href="deliverables.html#UserDocumentation">user documentation</a><font size="2">) is 
+		typically written during this phase because the system's functionality 
+		has stabilized.</font></p>
+		<p><b><font size="2">Announce the deployment</font></b><font size="2">.&nbsp; You should announce the anticipated deployment schedule 
+		including the expected training and installation dates. You need to 
+		train your operations, support, and user communities as appropriate 
+		during this phase.&nbsp; </font> </p>
+		<p><b><font size="2">Train 
+		people</font></b><font size="2">. Training your project customers &#8211; users, 
+		management, operations staff, and support staff &#8211; is always an important 
+		part of deployment.&nbsp; Remember that your customers may need training 
+		beyond that of learning how to work with your application.&nbsp; For example, 
+		this may be the first time that some users are working with a PC, a 
+		browser, or even a mouse.&nbsp; Similarly, this may be the first time that 
+		your operations staff is working with a new technology that your system 
+		users, such as an EJB application server, and therefore will need to be 
+		trained and educated in that technology to qualify them to work with 
+		your system.&nbsp; </font> </p>
+		<p><b><font size="2">Deploy the system into production</font></b><font size="2">.&nbsp; At this point you 
+		will perform any required data conversion, which may be a one-time batch 
+		job or a gradual conversion of the data as it is needed by your users.&nbsp; 
+		You may decide to run your new system in parallel with your existing 
+		system for several weeks to ensure that it actually works in production.&nbsp; 
+		You may also choose to deploy your system to a subset of your user 
+		community, called a pilot release, to verify that it runs for the 
+		smaller group before you choose to &quot;inflict&quot; your system on everyone.&nbsp; 
+		You may also need to deploy a version of your software to the support 
+		department so they can simulate production problems when users contact 
+		them for help.</font></p>
+		</td>
+	</tr>
+	</table>
+<p>&nbsp;</p>
+<h3><a name="SuggestedReading">Suggested Reading</a></h3>
+<ul>
+	<li>
+	<a href="http://www.ambysoft.com/essays/trainingAndEducation.html">
+	Strategies for Effective Training and Education in IT</a></li>
+	<li>
+	<a href="http://www.ambysoft.com/essays/deploymentTips.html">System 
+	Deployment Tips and Techniques</a></li>
+</ul>
+
+<p><br>
+</p>
+
+<hr>
+<table border="0" id="table2" width="100%" bgcolor="#FFFFCC">
+	<tr>
+		<td width="104">
+		<a href="http://www.ambysoft.com/scottAmbler.html">
+		<img border="0" src="../images/logoYours.gif" align="left"></a></td>
+		<td><b>Page last updated: September 25, 2005</b><p>
+<b>This page is tailored with permission from <a href="http://www.ambysoft.com/">
+Ambysoft Inc.'s</a>
+<a href="http://www.ambysoft.com/unifiedprocess/agileUP.html">Agile UP Product</a> 
+</b></p>
+		<p>
+<b>Original page is Copyright © 2005 <a href="http://www.ambysoft.com">Ambysoft Inc.</a></b><a href="http://www.ambysoft.com">
+</a> </p></td>
+	</tr>
+</table>
+</body>
+</html>

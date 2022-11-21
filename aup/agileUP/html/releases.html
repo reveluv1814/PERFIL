@@ -1,0 +1,150 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type"
+content="text/html; charset=iso-8859-1">
+<meta name="GENERATOR" content="Microsoft FrontPage 6.0">
+<link rel="stylesheet" type="text/css" href="../stylesheet/global.css">
+<title>Delivering Incremental Releases Over Time</title>
+</head>
+
+<body bgcolor="#FFFFFF">
+
+<table border="0" cellpadding="0" cellspacing="0" id="table1" width="100%" bgcolor="#FFFFCC">
+    <tr>
+        <td width="8%"><a href="../index.html">
+		<img border="0" src="../images/logoAgileUP.gif" align="left"></a></td>
+        <td><h1 align="center"><font color="#008000">Releases</font></h1>
+        </td>
+        <td width="8%"><a href="../index.html">
+		<img border="0" src="../images/logoAgileUP.gif" align="right"></a></td>
+    </tr>
+
+    <!-- Menu Bar -->
+    <script language="JavaScript" src="../javascript/tablecell_mouseover.js"></script>
+    <tr>
+    <td width="200%" colspan="3" style="border-style: solid; border-width: 1px">
+   
+    <table class="menu" align="center" cellpadding="2" cellspacing="2" bgcolor="#FFFFCC" width="100%" style="border-width: 0px" id="menuTable" >
+        <tbody>
+            <tr>
+            <td class="cur-nav" onmouseover='mOvr(this,"#00D000");' onmouseout='mOut(this,"#FFFFCC");' style="border-style: none; border-width: medium">
+            <a href="../index.html">Home</a> </td>
+
+            <td class="cur-nav" onmouseover='mOvr(this,"#00D000");' onmouseout='mOut(this,"#FFFFCC");' style="border-style: none; border-width: medium">
+	        <a href="phases.html">Phases</a> </td> 
+
+            <td class="cur-nav" onmouseover='mOvr(this,"#00D000");' onmouseout='mOut(this,"#FFFFCC");' style="border-style: none; border-width: medium">
+	        <a href="disciplines.html">Disciplines</a>  </td>
+
+            <td class="cur-nav" onmouseover='mOvr(this,"#00D000");' onmouseout='mOut(this,"#FFFFCC");' style="border-style: none; border-width: medium">
+	        <a href="milestones.html">Milestones</a> </td> 
+
+            <td class="cur-nav" onmouseover='mOvr(this,"#00D000");' onmouseout='mOut(this,"#FFFFCC");' style="border-style: none; border-width: medium">
+	        <a href="roles.html">Roles</a> </td> 
+
+            <td class="cur-nav" onmouseover='mOvr(this,"#00D000");' onmouseout='mOut(this,"#FFFFCC");' style="border-style: none; border-width: medium">
+	        <a href="deliverables.html">Deliverables</a> </td> 
+
+            <td class="cur-nav" onmouseover='mOvr(this,"#00D000");' onmouseout='mOut(this,"#FFFFCC");' style="border-style: none; border-width: medium">
+	        <a href="guidance.html">Guidance</a>  </td>
+            
+            <td class="cur-nav" onmouseover='mOvr(this,"#00D000");' onmouseout='mOut(this,"#FFFFCC");' style="border-style: none; border-width: medium">
+	        <a href="help.html">Help</a>  </td>
+            
+            </tr>
+     </table>
+	</td>
+    </tr>
+
+    </table>
+
+<p>Project teams following the AUP deliver incremental releases over time.&nbsp; 
+In other words, instead of the &quot;big bang&quot; approach where you deliver software 
+all at once you instead release it into production in portions (e.g. version 1, 
+then version 2, and so on).</p>
+<p>AUP teams typically deliver development releases at the end of each iteration 
+into
+	<a href="http://www.agiledata.org/essays/sandboxes.html">pre-production 
+testing and/or demo 
+	staging area(s)</a> (see <a href="#Figure1">Figure 1</a>).&nbsp; A 
+development release of an application is something that could potentially be 
+released into production if it were to be put through your pre-production 
+quality assurance (QA), testing, and deployment processes.&nbsp; Granted, this 
+won&#8217;t be true earliest development releases because you won&#8217;t have delivered 
+sufficient functionality to make deployment worth your while.&nbsp; Furthermore 
+at the beginning of a project you often stub out interfaces to shared services &#8211; 
+such as security, persistence, or even reusable legacy functionality &#8211; so 
+technically you still have some clean up to do before you&#8217;re ready to release to 
+production.&nbsp; </p>
+<p>&nbsp;</p>
+<p><b><a name="Figure1">Figure 1</a>. Sandboxes.</b></p>
+<p align="center"><img border="0" src="../images/sandboxes.gif"></p>
+<p>&nbsp;</p>
+<p>A good process pattern to adopt is that if you have a new version of working 
+software then you should consider&nbsp;deploying it at least into the 
+pre-production/demo environments to share it with others.&nbsp; The sooner it 
+gets into the hands of people outside of your team, the sooner you will start to 
+get feedback from others. </p>
+<p>In <a href="#Figure2">Figure 2</a> you see that the 
+	first production release often takes longer to deliver than subsequent 
+	releases; in the first release of a system you likely need to get a lot of 
+	the &#8220;plumbing&#8221; in place and your team likely hasn&#8217;t &#8220;gelled&#8221; yet enabling 
+	them to become efficient at collaboration.&nbsp; The first production release may 
+	take you twelve months to deliver, the second release nine months, and then 
+	other releases are delivered every six months.&nbsp; An early focus on 
+	deployment issues not only enables you to avoid problems it also allows you 
+	to take advantage of your experiences during development.&nbsp; For example, when 
+	you are deploying software into your staging area you should take notes of 
+	what works and what doesn&#8217;t, notes that can serve as the backbone of your 
+	installation scripts.</p>
+<p>&nbsp;</p>
+<p><b><a name="Figure2">Figure 2</a>. Incremental releases over time.</b></p>
+<p align="center">
+<img border="0" src="../images/incrementalReleases.gif"></p>
+<p align="center">
+&nbsp;</p>
+<p align="left">
+<a href="#Figure3">Figure 3</a> depicts how you will need to 
+schedule the deployment of your application into pre-defined deployment windows, 
+shown in green.&nbsp; A deployment window, often called a release window, is a 
+specific point in time where it is permissible to deploy a system into 
+production.&nbsp; Your 
+<a href="http://www.enterpriseunifiedprocess.com/essays/operationsAndSupport.html">operations staff</a> will very likely have strict rules regarding 
+when application teams may deploy systems.&nbsp; <a href="#Figure3">
+Figure 3</a> shows how two project teams schedule the deployment of their 
+changes (including database refactorings) into available deployment windows.&nbsp; 
+Sometimes there is nothing to deploy, sometimes one team has changes, and other 
+times both teams have schema changes to deploy. You will naturally need to 
+coordinate with any other teams which are deploying during the same deployment 
+window.&nbsp; This coordination will occur long before you go to deploy, and 
+frankly the primary reason why your pre-production test environment exists is to 
+provide a sandbox in which you can resolve multi-system issues.&nbsp;&nbsp;
+</p>
+<p align="left">
+&nbsp;</p>
+<p align="left">
+<b><a name="Figure3">Figure 3</a>.&nbsp; Scheduling your 
+release into deployment windows.</b></p>
+<p align="center">
+<img border="0" src="../images/deploymentWindows.gif" width="608" height="141"></p>
+<p align="left">
+<br>
+</p>
+
+<hr>
+<table border="0" id="table2" width="100%" bgcolor="#FFFFCC">
+	<tr>
+		<td width="104">
+		<img border="0" src="../images/logoYours.gif" width="81" height="57" align="left"></td>
+		<td><b>Page last updated: May 13, 2006</b><p>
+<b>This page is tailored with permission from <a href="http://www.ambysoft.com/">
+Ambysoft Inc.'s</a>
+<a href="http://www.ambysoft.com/unifiedprocess/agileUP.html">Agile UP Product</a></b></p>
+		<p>
+<b>Original page is Copyright © 2006 <a href="http://www.ambysoft.com">Ambysoft Inc.</a></b><a href="http://www.ambysoft.com">
+</a> </p></td>
+	</tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,87 @@
+	body {
+		font-size: 10pt;
+		font-family: Arial;
+		margin-left: 8px;
+		margin-top: 8px;
+		
+	}
+
+TD.auptitle    { color: #008000; background-color:#FFFFCC}
+TABLE.aupheader { color: #008000; background-color:#FFFFCC}
+TABLE.aupfooter { color: #000000; background-color:#FFFFCC}
+Body.aupbody     { color: #000000; background-color:#FFFFFF  }
+
+	A:link {
+		font-size: 10pt;
+		color: #008000; text-decoration:none; font-weight:bold 	}
+
+	A:visited {
+		font-size: 10pt;
+		color: #008000;text-decoration:none
+	}
+
+	A:hover {
+		Color : 000000;
+	}
+
+	TD.curr-nav {
+		font-size: 10pt;
+		color: #008000;
+		font-family: Arial;
+		font-weight: bold;
+		text-align: center
+	}
+
+	TD.nav {
+		font-size: 10pt;
+		color: #008000;
+		font-family: Arial;
+		font-weight: normal;
+		text-align : center
+	}
+
+	TD.header {
+		font-size: 11pt;
+		font-weight: bold;
+		font-family: Arial, Helvetica, sans-serif;
+	}
+
+	TD.text {
+		font-size: 10pt;
+		font-family: "Times New Roman", Times, serif;
+		background-color: white;
+	}
+	
+	TD.cell {
+		font-size: 10pt;
+		font-family: Arial;
+		background-color: white
+	}
+	
+	TD.rowlabel {
+		font-size: 10pt;
+		font-weight: bold;
+		font-family: Arial;
+		background-color: #ffffcc
+	}
+	
+	TD.body {
+		font-size: 10pt;
+		font-family: "Times New Roman";
+		background-color: #FFFFFF;
+		padding-left: 23px;
+		padding-top: 8px;
+		padding-bottom: 10px
+	}
+
+	TD.footer {
+		font-size: 8pt;
+		font-family: Arial, Helvetica, sans-serif;
+	}
+	
+	b.subheading {
+		font-size: 13pt;
+		font-family: Arial, Helvetica, sans-serif;
+	}
+	.subheading {  color: #3366CC; font-size: 12pt; font-weight: bold}
+.submenu {  font-family: "Courier New", Courier, mono}
